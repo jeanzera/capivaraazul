@@ -1,0 +1,24 @@
+{
+  "name": "capivaraazul",
+  "description": "Front end BlueHack",
+  "main": "index.js",
+  "authors": [
+    "Capivara Azul - Blue | Hack"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Front End",
+    "Blue Hack"
+  ],
+  "homepage": "https://github.com/tiaGonet/capivaraazul.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "components-font-awesome": "^4.7.0",
+    "jquery.maskedinput": "^1.4.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "bluehack",
+  "version": "1.0.0",
+  "description": "Front end App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaGonet/capivaraazul.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "front end"
+  ],
+  "author": "Capivara Web",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaGonet/capivaraazul/issues"
+  },
+  "homepage": "https://github.com/tiaGonet/capivaraazul#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "dependencies": {
+    "jquery-validation": "^1.17.0"
+  }
+}

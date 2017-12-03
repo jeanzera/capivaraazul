@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blue Hack - Capivara Azul</title>
+	<meta name="viewport" conten="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<div class="container box-step-1" id="box-step-1">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 push-md-4">
+				<div class="form-group">
+					<label for="">Informe o CPF do Paciênte</label>
+					<input type="text" class="form-control" required id="cpf">
+					<br>
+					<br>
+					<input type="button" id="bt-step-1" class="btn btn-primary" value="Contituar">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container box-step-2" id="box-step-2" style="display: none">
+		<form action="">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h3>SINAN</h3>
+				<h4>
+					SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO 
+					<br>
+					FICHA DE NOTIFICAÇÃO / INVESTIGAÇÃO <strong>TUBERCULOSE</strong>
+
+				</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-1">&nbsp;</div>
+			<div class="col-sm-12 col-md-10">
+				<h5>Dados Gerais</h5>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="text">Tipo de Notificação</label>
+							<input type="text" name=""  class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="text">Agravo/Doença</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-2">
+						<div class="form-group">
+							<label for="text">Código (CID10)</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Data Notificação</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-2">
+						<div class="form-group">
+							<label for="text">UF</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-6">
+						<div class="form-group">
+							<label for="text">Município de Notificação</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="form-group">
+							<label for="text">Código IBGE</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="text">Unidade de Saúde (ou outra fonte notificadora)</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-2">
+						<div class="form-group">
+							<label for="text">Código</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Data do Diagnóstico</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<h5>Notificação Individual</h5>
+				<div class="row">
+					<div class="col-sm-12 col-md-8">
+						<div class="form-group">
+							<label for="text">Nome do Paciente</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-4">
+						<div class="form-group">
+							<label for="text">Data de Nascimento</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-2">
+						<div class="form-group">
+							<label for="text">Ou idade</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Sexo</label>
+							<select name class="form-control" id="">
+								<option value="">-- Selecione o Sexo --</option>
+								<option value="">Masculino</option>
+								<option value="">Feminino</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Gestante</label>
+							<select name class="form-control" id="">
+								<option value="">--</option>
+								<option value="">1º Trimestre</option>
+								<option value="">2º Trimestre</option>
+								<option value="">3º Trimestre</option>
+								<option value="">Idade Getacional Ignorada</option>
+								<option value="">Não</option>
+								<option value="">Não se aplica</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Raça/Cor</label>
+							<select name class="form-control" id="">
+								<option value="">--</option>
+								<option value="">Branca</option>
+								<option value="">Preta</option>
+								<option value="">Amarela</option>
+								<option value="">Parda</option>
+								<option value="">Indígena</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="text">Escolaridade</label>
+							<select name class="form-control" id="">
+								<option value="">--</option>
+								<option value="0">Analfabeto</option>
+								<option value="1">1ª a 4ª série incompleta do EF (antigo primário ou 1º grau)</option>
+								<option value="2">2-4ª série completa do EF (antigo primário ou 1º grau)</option>
+								<option value="3">5ª à 8ª série incompleta do EF (antigo ginásio ou 1º grau) </option>
+								<option value="4">Ensino fundamental completo (antigo ginásio ou 1º grau)  </option>
+								<option value="5">Ensino médio incompleto (antigo colegial ou 2º grau )  </option>
+								<option value="6">Ensino médio completo (antigo colegial ou 2º grau )   </option>
+								<option value="7">Educação superior incompleta  </option>
+								<option value="8">Educação superior completa   </option>
+								<option value="9">Ignorado</option>
+								<option value="10">Não se Aplica</option>
+								
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<div class="form-group">
+							<label for="text">Número do Cartatão SUS</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-8">
+						<div class="form-group">
+							<label for="text">Nome da mãe</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<h5>Dados de Residência</h5>
+				<div class="row">
+					<div class="col-sm-12 col-md-2">
+						<div class="form-group">
+							<label for="text">UF</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Município de Residência</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-2">
+						<div class="form-group">
+							<label for="text">Código do IBGE</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="form-group">
+							<label for="text">Distrito</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-2">
+						<div class="form-group">
+							<label for="text">Bairro</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-7">
+						<div class="form-group">
+							<label for="text">Logradouro (rua, avenida,...)</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="form-group">
+							<label for="text">Código</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-1">
+						<div class="form-group">
+							<label for="text">Número</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-8">
+						<div class="form-group">
+							<label for="text">Complemento (apto., casa, ...)</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="form-group">
+							<label for="text">Geo campo 1</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<div class="form-group">
+							<label for="text">Geo Campo 2</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6">
+						<div class="form-group">
+							<label for="text">Ponto de Referência</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="form-group">
+							<label for="text">CEP</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<div class="form-group">
+							<label for="text">Telefone</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Zona</label>
+							<select name="" class="form-control" id="">
+								<option value="">--</option>
+								<option value="">Urbana</option>
+								<option value="">Rural</option>
+								<option value="">Periurbana</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">País (se residente fora do Brasil)</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<h5>Dados Complementares do Caso</h5>
+				<div class="row">
+					<div class="col-sm-12 col-md-3">
+						<div class="form-group">
+							<label for="text">Número do Prontuário</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Tipo de Entrada</label>
+							<select name="" class="form-control" id="">
+								<option value="">--</option>
+								<option value="">Caso Novo</option>
+								<option value="">Recidiva</option>
+								<option value="">Reingresso Após Abandono </option>
+								<option value="">Não Sabe</option>
+								<option value="">Transferência</option>
+								<option value="">Pós-óbito</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Populações Especiais</label>
+							<select name="" class="form-control" class="selectpicker" multiple data-actions-box="true" id="">
+								<option value="">Sim</option>
+								<option value="">Não</option>
+								<option value="">Ignorado </option>
+								<option value="">População Privada de Liberdade </option>
+								<option value="">Profissional de Saúde </option>
+								<option value="">População em Situação de Rua </option>
+								<option value="">Imigrante</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-7">
+						<div class="form-group">
+							<label for="text">Beneficiário de programa de transferência de renda do governo</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Sim</option>
+								<option value="">Não</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Forma</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">Pulmonar</option>
+								<option value="">Extrapulmonar</option>
+								<option value="">Pulmonar + Extrapulmonar</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-7">
+						<div class="form-group">
+							<label for="text">Se Extrapulmonar</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Pleural</option>
+								<option value="">Gang. Perif.</option>
+								<option value="">Geniturinária</option>
+								<option value="">Geniturinária</option>
+								<option value="">Óssea</option>
+								<option value="">Ocular</option>
+								<option value="">Miliar</option>
+								<option value="">Meningoencefálico</option>
+								<option value="">Cutânea</option>
+								<option value="">Laringea</option>
+								<option value="">Outra</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-12">
+						<div class="form-group">
+							<label for="text">Doenças e Agravos Associados</label>
+							<select name="" class="form-control" class="selectpicker" multiple data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Sim</option>
+								<option value="">Não</option>
+								<option value="">Ignorado</option>
+								<option value="">Aids</option>
+								<option value="">Alcoolismo</option>
+								<option value="">Diabetes</option>
+								<option value="">Doença Mental</option>
+								<option value="">Meningoencefálico</option>
+								<option value="">Uso de Drogas Ilícitas</option>
+								<option value="">Tabagismo</option>
+								<option value="">Outras</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Baciloscopia de Escarro (diagnóstico)</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Positiva</option>
+								<option value="">Negativa</option>
+								<option value="">Não Realizada</option>
+								<option value="">Não se Aplica</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Radiografia do Tórax</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Suspeito</option>
+								<option value="">Natural</option>
+								<option value="">Outra Patologia</option>
+								<option value="">Não Realizado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">HIV</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Positivo</option>
+								<option value="">Negativo</option>
+								<option value="">Em Andamento</option>
+								<option value="">Não Realizado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-6">
+						<div class="form-group">
+							<label for="text">Terapia Antirretroviral Durante o Tratamento para a TB</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Sim</option>
+								<option value="">Não</option>
+								<option value="">Ignorado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6">
+						<div class="form-group">
+							<label for="text">Histopatologia</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Baar Positivo</option>
+								<option value="">Sugestivo de TB</option>
+								<option value="">Não Sugestivo de TB</option>
+								<option value="">Em Andamento</option>
+								<option value="">Não Realizado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="form-group">
+							<label for="text">Cultura</label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Positivo</option>
+								<option value="">Negativo</option>
+								<option value="">Em Andamento</option>
+								<option value="">Não Realizado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="form-group">
+							<label for="text">Teste Molecular Rápido TB (TMR-TB) </label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Detectável sensível à Rifampicina</option>
+								<option value="">Detectável Resistente à Rifampicina</option>
+								<option value="">Não Detectável</option>
+								<option value=""> Inconclusivo</option>
+								<option value="">Não Realizado</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-5">
+						<div class="form-group">
+							<label for="text">Teste de Sensibilidade </label>
+							<select name="" class="form-control" class="selectpicker" data-actions-box="true" id="">
+								<option value="">--</option>
+								<option value="">Resistente somente à Isoniazida</option>
+								<option value="">Resistente somente à Rifampicina</option>
+								<option value="">Resistente à Isoniazida e Rifampicina</option>
+								<option value="">Resistente a outras drogas de 1ª linha</option>
+								<option value="">Sensível </option>
+								<option value="">Em andamento</option>
+								<option value="">Não realizado</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-4">
+						<div class="form-group">
+							<label for="text">Data de Início do Tratamento Atual</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-4">
+						<div class="form-group">
+							<label for="text">Total de Contatos Identificados</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-8">
+						<div class="form-group">
+							<label for="text">Município/Unidade de Saúde</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-4">
+						<div class="form-group">
+							<label for="text">Cód. da Unid. de Saúde</label>
+							<input type="text" class="form-control" required id="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<br>
+						<br>
+						<input type="submit" class="btn btn-primary btn-large" value="Dar Entrada">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-1">&nbsp;&nbsp;</div>
+		</div>
+
+		</form>
+		
+	</div>	
+	
+	<script src="./js/main.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>

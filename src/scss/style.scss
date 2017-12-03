@@ -1,0 +1,55 @@
+@import "../components/bootstrap/scss/bootstrap.scss";
+
+$cinza1: #a1a1a1;
+$azul1: #0275d8;
+
+body{
+	 //background: $cinza1;
+	 font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: $cinza1;
+	position: relative;
+}
+h3{
+	font-size: 2.6rem;
+}
+h4{
+	font-size: 1.5rem;
+	margin-bottom: 4em;
+}
+
+
+h5{
+	margin-bottom: 1.5em;
+	&:before{
+		content:'';
+		position: absolute;
+		border-bottom: 3px solid $azul1;
+		width: 3rem;
+		left: 0;
+		bottom: -0.5rem;
+	}
+}
+
+.required{
+	border-color: red;
+}
+
+.box-step-1{
+	text-align: center;
+	margin-top: 10%;
+
+	.form-group{
+
+	}
+}
+.box-step-2{
+	padding-top: 5em;
+	translateY: top;
+	transition: x; /* lida por navegadores modernos */
+	-moz-transition: x; /* para Mozilla antigo */
+	-o-transition: x; /* para Opera antigo */
+	-webkit-transition: x; /* para Chrome e similares antigos */
+}
